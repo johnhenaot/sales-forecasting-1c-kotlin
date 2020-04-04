@@ -11,6 +11,13 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    testImplementation group: 'io.kotlintest', name: 'kotlintest-runner-junit5', version: '3.4.2'
+    testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 compileKotlin {
