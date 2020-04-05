@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation group: 'org.apache.spark', name: 'spark-sql_2.12', version: '2.4.5'
 
     testImplementation group: 'io.kotlintest', name: 'kotlintest-runner-junit5', version: '3.4.2'
     testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
